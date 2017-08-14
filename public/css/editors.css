@@ -1,0 +1,7 @@
+.panel-heading {
+    font-size: 1.5em;
+}
+
+.panel-body {
+    word-break: break-all;
+}

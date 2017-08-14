@@ -1,0 +1,7 @@
+Librairies versions
+-------------------
+Bootstrap: 3.3.7
+Flatly: 
+JQuery: 3.2.1
+Recaptcha: 2014
+Turbolinks: 5.0.0

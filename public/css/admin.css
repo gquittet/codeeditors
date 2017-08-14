@@ -1,0 +1,12 @@
+div.main-form > * {
+    margin: auto auto;
+    width: 80%;
+}
+
+.form-groupTitle {
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 1em;
+}

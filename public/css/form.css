@@ -1,0 +1,27 @@
+div.main-form > * {
+    margin: 0.3em auto 0.6em auto;
+    width: 80%;
+}
+
+.form-groupTitle {
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    width: 100%;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: white;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.panel-body {
+    word-break: break-all;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 1em;
+}

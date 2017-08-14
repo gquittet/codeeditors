@@ -1,0 +1,27 @@
+h1 {
+    padding: 1% 0 1% 0;
+}
+
+h3 {
+    padding: 0 0 2% 0;
+}
+
+p {
+    line-height: 250%;
+    margin: 0 auto 3% auto;
+}
+
+.btn {
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        line-height: 250%;
+        margin: 0 auto 5% auto;
+    }
+
+    .btn {
+        margin-bottom: 4%;
+    }
+}
