@@ -98,6 +98,25 @@ class Model
         return $result;
     }
 
+    public static function getData($tableDB, $dataDB)
+    {
+        $columns = self::getColumns($tableDB);
+        $query = "SELECT * FROM $tableDB WHERE ";
+        foreach ($columns as $key => $item)
+        {
+            if ($key <= 0)
+            {
+                $query = $query . "$item = '$dataDB'";
+            }
+            else
+            {
+                $query = $query . " OR $item = '$dataDB'";
+            }
+        }
+        $result = self::query($query);
+        return $result;
+    }
+
     public static function getDataLike($tableDB, $dataDB)
     {
         $columns = self::getColumns($tableDB);
@@ -120,7 +139,7 @@ class Model
     public static function getPDO()
     {
         if (self::$pdo == null) {
-            self::$pdo = new PDO("mysql:host=localhost;dbname=codeeditors;charset=utf8", 'root', 'toor', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            self::$pdo = new PDO("mysql:host=localhost;dbname=codeeditors;charset=utf8", 'root', 'zouloute', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         }
         return self::$pdo;
     }

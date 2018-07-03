@@ -57,7 +57,7 @@ if ($isUserInputCorrect)
                 $columns[] = $column;
             }
         }
-        Model::insert($tableName, array($name, $version, $owner, $website, $description, date('Y-m-d H:i:s'), $_SESSION['id']), $columns);
+        Model::insert($tableName, array($name, $version, $owner, $url, $description, date('Y-m-d H:i:s'), $_SESSION['id']), $columns);
         header('Location: ../../../public/editors.php');
     }
     else
